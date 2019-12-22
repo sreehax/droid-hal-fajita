@@ -9,7 +9,7 @@
 
 %define droid_target_aarch64 1
 
-%define installable_zip 1
+%define installable_zip 0
 
 %define straggler_files \
     /vendor \
@@ -28,7 +28,7 @@
 %define makefstab_skip_entries /vendor /sys/fs/pstore
 
 %define android_config \
-  #define WANT_ADRENO_QUIRKS 1 \
+#define WANT_ADRENO_QUIRKS 1 \
 %{nil}
 
 %include rpm/dhd/droid-hal-device.inc
